@@ -1,0 +1,9 @@
+.screen-adapter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  transform-origin: 0 0; // 变化中心改为左上角 默认是center
+}
