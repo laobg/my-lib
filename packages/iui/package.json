@@ -1,0 +1,28 @@
+{
+  "name": "iui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "keywords": [
+    "iui",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "vue": "^3.2.47"
+  },
+  "author": "<Ice@stwangcq@163.com>",
+  "license": "MIT",
+  "typings": "lib/index.d.ts"
+}

@@ -1,0 +1,11 @@
+import type { App, Component, Plugin } from 'vue';
+type SFCWithInstall<T> = T & Plugin;
+export const withInstall = <T>(comp: T) => {
+  (comp as SFCWithInstall<T>).install = (app: App) => {
+    const name = (comp as Component).name;
+
+    // 注册组件
+    app.component(name as string, comp as Component);
+  };
+  return comp as SFCWithInstall<T>;
+};
