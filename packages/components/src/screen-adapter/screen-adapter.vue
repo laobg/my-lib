@@ -15,7 +15,7 @@ import {
 import { debounce } from 'lodash';
 import './style';
 export default defineComponent({
-  name: 'ScreenAdapter',
+  name: 'IScreenAdapter',
   props: {
     width: {
       type: String,
