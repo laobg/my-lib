@@ -34,6 +34,9 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: resolve('../../dist/iui', 'es'),
+          manualChunks: {
+            echarts: ['echarts', 'vue'],
+          },
         },
         {
           //打包格式
@@ -52,6 +55,9 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: resolve('../../dist/iui', 'lib'),
+          manualChunks: {
+            echarts: ['echarts', 'vue'],
+          },
         },
       ],
     },

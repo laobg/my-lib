@@ -7,6 +7,9 @@
         v-model:selectUnit="selectUnit"
         v-model:selectDate="selectDate"
       ></el-datepickers>
+      <div class="map">
+        <echarts-map></echarts-map>
+      </div>
     </div>
   </i-screen-adapter>
 </template>
@@ -16,3 +19,9 @@ import dayjs from 'dayjs';
 const selectDate = ref(dayjs().toDate());
 const selectUnit: Ref<'date' | 'week' | 'month'> = ref('month');
 </script>
+<style lang="scss">
+.map {
+  width: 800px;
+  height: 800px;
+}
+</style>
